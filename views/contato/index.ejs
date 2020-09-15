@@ -1,0 +1,33 @@
+<%- include ("../partials/header.ejs") %>
+<%- include("../partials/navbar.ejs") %>
+<hr>
+<section class="contato">
+    
+    <h2>Contato</h2>
+
+    <form method="POST" action="/salvarmensagem">
+        <div class="form-wraper w100">
+            <span>Nome: </span>
+            <input placeholder="Nome*" type="text" name="nome">
+        </div>
+        <div class="form-wraper w50">
+            <span>E-mail: </span>
+            <input placeholder="E-mail*" type="text" name="email">
+        </div>
+        <div class="form-wraper w50">
+            <span>Telefone: </span>
+            <input placeholder="Telefone*" type="text" name="telefone">
+        </div>
+        <div class="form-wraper w100">
+            <span>Mensagem </span>
+            <textarea placeholder="Mensagem*" name="mensagem" type="textarea"></textarea>
+        </div>
+
+        <div class="form-wraper w100">
+            <input type="submit" name="acao" value="Enviar">
+        </div>
+    </form>
+
+    <div class="clear"></div>
+</section><!--contato-->
+<%- include("../partials/footer.ejs") %>
